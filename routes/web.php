@@ -20,8 +20,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/home/usuarios', 'HomeController@users');
-Route::post('/home', 'HomeController@store');
+Route::get('/usuarios', 'HomeController@users')->name('usuarios');
+
 
 Route::get('/home/agendar', 'HomeController@agenda');
 

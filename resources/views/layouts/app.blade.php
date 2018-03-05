@@ -19,7 +19,7 @@
       <a href="{{ route('home') }}"><i class="fa fa-home"></i> <span class="nav-label">Inicio</span></a>
     </li>
     <li class="active">
-      <a href="../home/usuarios"><i class="fa fa-user-circle-o"></i> <span class="nav-label">Agregar Usuarios</span></a>
+      <a href="{{ route('usuarios') }}"><i class="fa fa-user-circle-o"></i> <span class="nav-label">Agregar Usuarios</span></a>
     </li>
     <li class="active">
       <a href="../home/agendar"><i class="fa fa-address-book"></i> <span class="nav-label">Agendar Rutas</span></a>
