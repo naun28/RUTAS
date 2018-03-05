@@ -27,5 +27,18 @@
     <li class="active">
       <a href="{{ route('home') }}"><i class="fa fa-home"></i> <span class="nav-label">Modulo 3</span></a>
     </li>
+    <li class="active">
+      <a href="{{ route('calc') }}"><i class="fa fa-usd"></i> <span class="nav-label">Calculo de costos</span></a>
+    </li>
+    <li class="active">
+      <a href="{{ route('brig') }}"><i class="fa fa-user-o"></i> <span class="nav-label">Brigadista</span></a>
+    </li>        
+    <li class="active">
+      <a href="{{ route('secret') }}"><i class="fa fa-user-o"></i> <span class="nav-label">Secretarias</span></a>
+    </li>
+    <li class="active">
+      <a href="{{ route('repor') }}"><i class="fa fa-newspaper-o"></i> <span class="nav-label">Reportes</span></a>
+    </li>
+
   </ul>
 @endsection

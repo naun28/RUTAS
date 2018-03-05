@@ -36,8 +36,16 @@ class HomeController extends Controller
         return view('agendar');
     }
 
-    public function store()
-    {
-        # code...
+    public function calculo(){
+        return view('calc');
+    }
+    public function brigadista(){
+        return view('brig');
+    }
+    public function secretaria(){
+        return view('secret');
+    }
+    public function reportes(){
+        return view('repor');
     }
 }

@@ -24,3 +24,8 @@ Route::get('/home/usuarios', 'HomeController@users');
 Route::post('/home', 'HomeController@store');
 
 Route::get('/home/agendar', 'HomeController@agenda');
+
+Route::get('/calc', 'HomeController@calculo')->name('calc');
+Route::get('/brig', 'HomeController@brigadista')->name('brig');
+Route::get('/secret', 'HomeController@secretaria')->name('secret');
+Route::get('/repor', 'HomeController@reportes')->name('repor');
