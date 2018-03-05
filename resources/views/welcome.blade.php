@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Rutas Inspinia
+                    Sistema de Rutas 
                 </div>
 
                 <div class="links">
