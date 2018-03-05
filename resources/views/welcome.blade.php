@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Sistema de Rutas bbbbbbbbbbbbbb
+                    Sistema de Rutas
                 </div>
 
                 <div class="links">
