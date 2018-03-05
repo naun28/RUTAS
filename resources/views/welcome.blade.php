@@ -14,11 +14,20 @@
         <style>
             html, body {
                 background-color: #f0f0f0;
-                color: #636b6f;
+                background-image: url({{ asset('images/maps.png') }});
+                color: #000;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
+            }
+            #hola{
+                /*background-color: rgba(0,0,0,0.8);
+                filter:brightness(0.4);
+                filter: blur(6px);
+                width: 100%;
+                height: 100%;*/
+                
             }
 
             .full-height {
@@ -62,12 +71,14 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div  class="flex-center position-ref full-height">
             
-
+            {{-- <img id="hola" src="" alt=""> --}}
+             
             <div class="content">
                 <div class="title m-b-md">
                     Sistema de Rutas
