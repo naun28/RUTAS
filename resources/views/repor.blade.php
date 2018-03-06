@@ -144,6 +144,13 @@
                         <td class="center">A</td>
                     </tr>
                     <tr class="gradeA">
+                        <td>Alberto</td>
+                        <td>Chrome</td>
+                        <td>Win 10</td>
+                        <td class="center">5.0</td>
+                        <td class="center">A</td>
+                    </tr>
+                    <tr class="gradeA">
                         <td>Gecko</td>
                         <td>Netscape Browser 8</td>
                         <td>Win 98SE+</td>
