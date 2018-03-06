@@ -12,14 +12,16 @@
 
         <!-- Styles -->
         <style>
-            html, body {
-                background-color: #f0f0f0;
-                background-image: url({{ asset('images/maps.png') }});
+        html,body {
+                
+                background-color: #ebe9e5;
                 color: #000;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
+                text-shadow: 5px 5px 15px 15px #434343;
+
             }
             #hola{
                 /*background-color: rgba(0,0,0,0.8);
@@ -29,6 +31,7 @@
                 height: 100%;*/
                 
             }
+
 
             .full-height {
                 height: 100vh;
@@ -71,22 +74,29 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-
+            img{
+                position: fixed;
+                filter: blur(4px);
+                width: 100%;
+                height: 100%;
+            }
         </style>
     </head>
     <body>
+        <div>
+            <img src="{{ asset('images/maps.png') }}" alt="">
+        
         <div  class="flex-center position-ref full-height">
             
-            {{-- <img id="hola" src="" alt=""> --}}
-             
+           
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md" style="text-shadow: 0px 0px 10px  #000;">
                     Sistema de Rutas
                 </div>
 
-                <div class="links">
+                <div class="links" style="text-shadow: 0px 0px 15px  #000;">
                     @if (Route::has('login'))
-                <div class=" links" >
+                <div class=" links" style="text-shadow: 0px 0px 15px  #000;">
                     @auth
                         <a href="{{ url('/home') }}">Inicio</a>
                     @else
@@ -96,6 +106,7 @@
                 </div>
             @endif                </div>
             </div>
+        </div>
         </div>
     </body>
 </html>
