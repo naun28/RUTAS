@@ -18,14 +18,17 @@
     <li class="active">
       <a href="{{ route('home') }}"><i class="fa fa-home"></i> <span class="nav-label">Inicio</span></a>
     </li>
+     <li class="active">
+      <a href="{{ route('escuelas') }}"><i class="fa fa-user-circle-o"></i> <span class="nav-label">Lista de Escuelas</span></a>
+    </li>
     <li class="active">
       <a href="{{ route('usuarios') }}"><i class="fa fa-user-circle-o"></i> <span class="nav-label">Agregar Usuarios</span></a>
     </li>
     <li class="active">
-      <a href="../home/agendar"><i class="fa fa-address-book"></i> <span class="nav-label">Agendar Rutas</span></a>
+      <a href="{{ route('agendar') }}"><i class="fa fa-address-book"></i> <span class="nav-label">Agendar Rutas</span></a>
     </li>
     <li class="active">
-      <a href="{{ route('home') }}"><i class="fa fa-home"></i> <span class="nav-label">Modulo 3</span></a>
+      <a href="{{ route('perfilesusuarios') }}"><i class="fa fa-home"></i> <span class="nav-label">Perfil de Usuarios</span></a>
     </li>
     <li class="active">
       <a href="{{ route('calc') }}"><i class="fa fa-usd"></i> <span class="nav-label">Calculo de costos</span></a>

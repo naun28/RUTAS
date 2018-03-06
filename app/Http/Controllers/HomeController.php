@@ -25,6 +25,10 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function escuela()
+    {
+        return view('escuelas');
+    }
 
     public function users()
     {
@@ -35,6 +39,11 @@ class HomeController extends Controller
     {
         return view('agendar');
     }
+    public function perfil()
+    {
+        return view('perfilesusuarios');
+    }
+
 
     public function calculo(){
         return view('calc');

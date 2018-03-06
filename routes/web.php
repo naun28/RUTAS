@@ -19,11 +19,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/escuelas', 'HomeController@escuela')->name('escuelas');
 Route::get('/usuarios', 'HomeController@users')->name('usuarios');
-
-
-Route::get('/home/agendar', 'HomeController@agenda');
+Route::get('/agendar', 'HomeController@agenda')->name('agendar');
+Route::get('/perfilesusuarios', 'HomeController@perfil')->name('perfilesusuarios');
 
 Route::get('/calc', 'HomeController@calculo')->name('calc');
 Route::get('/brig', 'HomeController@brigadista')->name('brig');
