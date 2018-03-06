@@ -15,8 +15,9 @@
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
                             <h5>Listado de tarea asignadas</h5>
+                           {{--  <h6 class="float-right">Semana del {{ date('d-m-Y') }} al {{ date('d-m-Y') }}</h6>
 
-                            {{-- <div class="ibox-tools">
+                            <div class="ibox-tools">
                                 <a class="collapse-link">
                                     <i class="fa fa-chevron-up"></i>
                                 </a>
@@ -29,14 +30,14 @@
                                 <thead>
                                 <tr>
 
-                                    <th data-toggle="true">Project</th>
-                                    <th>Name</th>
-                                    <th>Phone</th>
-                                    <th data-hide="all">Company</th>
-                                    <th data-hide="all">Completed</th>
-                                    <th data-hide="all">Task</th>
-                                    <th data-hide="all">Date</th>
-                                    <th>Action</th>
+                                    <th data-toggle="true">Nombre de escuela</th>
+                                    <th>Clave</th>
+                                    <th>Telefono</th>
+                                    <th data-hide="all">Director</th>
+                                    <th data-hide="all">Otrocampo</th>
+                                    <th data-hide="all">Otrocampo</th>
+                                    <th data-hide="all">Fecha ultima visita</th>
+                                    <th>Estatus</th>
                                 </tr>
                                 </thead>
                                 <tbody>
