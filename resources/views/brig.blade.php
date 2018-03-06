@@ -7,61 +7,199 @@
             <div class="ibox-title"><h5>Brigadista</h5></div>
         </div>
         <div class="col-lg-12">
+         
+        </div>
+    </div>
+    <div class="row">
+                <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>Range Slider <small>https://github.com/IonDen/ion.rangeSlider</small></h5>
-                            <div class="ibox-tools">
+                            <h5>Listado de tarea asignadas</h5>
+
+                            {{-- <div class="ibox-tools">
                                 <a class="collapse-link">
                                     <i class="fa fa-chevron-up"></i>
                                 </a>
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                    <i class="fa fa-wrench"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-user">
-                                    <li><a href="#">Config option 1</a>
-                                    </li>
-                                    <li><a href="#">Config option 2</a>
-                                    </li>
-                                </ul>
-                                <a class="close-link">
-                                    <i class="fa fa-times"></i>
-                                </a>
-                            </div>
+                                
+                            </div> --}}
                         </div>
                         <div class="ibox-content">
-                            <h3>
-                                Sliders
-                            </h3>
-                            <p>
-                                Are perfect for range select option.
-                            </p>
-                            <div class="m-b-sm">
-                                <small ><strong>Example of:</strong> Set diapason from 0 to 5000, Adding postfix "+" to max value, Set slider type to double, Dollar symbol as prefix, Enable grid  </small>
-                            </div>
-                            <div id="ionrange_1"></div>
 
-                            <div class="m-b-sm m-t">
-                                <small ><strong>Example of:</strong> Set diapason from 0 to 10, Set fractional step value: 0.1, Enable grid  </small>
-                            </div>
-                            <div id="ionrange_2"></div>
+                            <table class="footable table table-stripped toggle-arrow-tiny">
+                                <thead>
+                                <tr>
 
-                            <div class="m-b-sm m-t">
-                                <small ><strong>Example of:</strong> Set diapason from -50 to +50, Set FROM value to 0, Add degree symbol as postfix  </small>
-                            </div>
-                            <div id="ionrange_3"></div>
-
-                            <div class="m-b-sm m-t">
-                                <small ><strong>Example of:</strong>Change common slider numbers to custom (Month names). Using values array for that. Array can be any length, Slider will change min and max number automaticaly to fit values array length, Step parameter also will be changed to one, to allow to choose items in values array </small>
-                            </div>
-                            <div id="ionrange_4"></div>
-
-                            <div>
-                            <a class="btn btn-white pull-right btn-sm" href="https://github.com/IonDen/ion.rangeSlider" target="_blank">Read about API</a>
-                                <div class="clearfix"></div>
-                            </div>
+                                    <th data-toggle="true">Project</th>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th data-hide="all">Company</th>
+                                    <th data-hide="all">Completed</th>
+                                    <th data-hide="all">Task</th>
+                                    <th data-hide="all">Date</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Project - This is example of project</td>
+                                    <td>Patrick Smith</td>
+                                    <td>0800 051213</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><span class="pie">0.52/1.561</span></td>
+                                    <td>20%</td>
+                                    <td>Jul 14, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>0500 780909</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><span class="pie">6,9</span></td>
+                                    <td>40%</td>
+                                    <td>Jul 16, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Betha project</td>
+                                    <td>John Smith</td>
+                                    <td>0800 1111</td>
+                                    <td>Erat Volutpat</td>
+                                    <td><span class="pie">3,1</span></td>
+                                    <td>75%</td>
+                                    <td>Jul 18, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>(016977) 0648</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><span class="pie">4,9</span></td>
+                                    <td>18%</td>
+                                    <td>Jul 22, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>0500 780909</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><span class="pie">6,9</span></td>
+                                    <td>40%</td>
+                                    <td>Jul 16, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Project
+                                        <small>This is example of project</small>
+                                    </td>
+                                    <td>Patrick Smith</td>
+                                    <td>0800 051213</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><span class="pie">0.52/1.561</span></td>
+                                    <td>20%</td>
+                                    <td>Jul 14, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>(016977) 0648</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><span class="pie">4,9</span></td>
+                                    <td>18%</td>
+                                    <td>Jul 22, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Project
+                                        <small>This is example of project</small>
+                                    </td>
+                                    <td>Patrick Smith</td>
+                                    <td>0800 051213</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><span class="pie">0.52/1.561</span></td>
+                                    <td>20%</td>
+                                    <td>Jul 14, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>0500 780909</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><span class="pie">6,9</span></td>
+                                    <td>40%</td>
+                                    <td>Jul 16, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Betha project</td>
+                                    <td>John Smith</td>
+                                    <td>0800 1111</td>
+                                    <td>Erat Volutpat</td>
+                                    <td><span class="pie">3,1</span></td>
+                                    <td>75%</td>
+                                    <td>Jul 18, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>(016977) 0648</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><span class="pie">4,9</span></td>
+                                    <td>18%</td>
+                                    <td>Jul 22, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>0500 780909</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><span class="pie">6,9</span></td>
+                                    <td>40%</td>
+                                    <td>Jul 16, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Project
+                                        <small>This is example of project</small>
+                                    </td>
+                                    <td>Patrick Smith</td>
+                                    <td>0800 051213</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><span class="pie">0.52/1.561</span></td>
+                                    <td>20%</td>
+                                    <td>Jul 14, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>(016977) 0648</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><span class="pie">4,9</span></td>
+                                    <td>18%</td>
+                                    <td>Jul 22, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td colspan="5">
+                                        <ul class="pagination pull-right"></ul>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
                         </div>
                     </div>
                 </div>
-    </div>
+            </div>
 </div>
+
+
 @endsection
