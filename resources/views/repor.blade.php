@@ -4,20 +4,16 @@
 <div class="row">
     <div class="col 12 ">
         <div class="ibox float-e-margins">
-            <div class="ibox-title"><h5>Reportes</h5>
-              
-            </div>
-
-            
+            <div class="ibox-title"><h5>Reportes</h5></div>
         </div>
     </div>
-    <div >
+        <div >
             <div class="row">
                 <div class="col-lg-12">
                 <div class="ibox float-e-margins">
-                   {{--  <div class="ibox-title">
-                        <h5>Basic Data Tables example with responsive plugin</h5>
-                        <div class="ibox-tools">
+                    <div class="ibox-title">
+                        <h5>Generar reportes</h5>
+                         {{--<div class="ibox-tools">
                             <a class="collapse-link">
                                 <i class="fa fa-chevron-up"></i>
                             </a>
@@ -36,16 +32,15 @@
                         </div> --}}
                     </div>
                     <div class="ibox-content">
-
-                        <div class="table-responsive">
+                    <div class="table-responsive">
                     <table class="table table-striped table-bordered table-hover dataTables-example" >
                     <thead>
                     <tr>
-                        <th>Rendering engine</th>
-                        <th>Browser</th>
-                        <th>Platform(s)</th>
-                        <th>Engine version</th>
-                        <th>CSS grade</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -459,11 +454,11 @@
                     </tbody>
                     <tfoot>
                     <tr>
-                        <th>Rendering engine</th>
-                        <th>Browser</th>
-                        <th>Platform(s)</th>
-                        <th>Engine version</th>
-                        <th>CSS grade</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
                     </tr>
                     </tfoot>
                     </table>
@@ -474,5 +469,5 @@
             </div>
             </div>
         </div>
-</div>
+
 @endsection
