@@ -16,7 +16,6 @@
                 @endif
 
                 Pagina principal
-                cambios
             </div>
         </div>
     </div>
