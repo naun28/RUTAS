@@ -27,7 +27,7 @@
             </span>
         @endif
        </div>
-       <button type="submit" class="btn btn-primary block full-width m-b">Entrar</button>
+       <button type="submit" class="btn btn-danger block full-width m-b">Entrar</button>
 
        {{-- <a href="{{ route('password.request') }}"><small>Forgot password?</small></a> 
        <p class="text-muted text-center"><small>No tienes una cuenta?</small></p>
