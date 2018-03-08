@@ -15,7 +15,7 @@
                     </div>
                 @endif
 
-                Pagina principal
+                Pagina principalf
             </div>
         </div>
     </div>
