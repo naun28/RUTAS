@@ -13,7 +13,43 @@
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <button class="btn btn-primary"><li class="fa fa-plus-square"></li> Agregar Ruta</button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agregar Ruta</button>
+                            <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content animated bounceInRight">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <i class="fa fa-laptop modal-icon"></i>
+                                            <h4 class="modal-title">Agregar Ruta</h4>
+                                            
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">  Close</button>
+                                            <button type="submit" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="ibox-tools">
                                 <a class="collapse-link">
                                     <i class="fa fa-chevron-up"></i>
