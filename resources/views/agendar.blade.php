@@ -14,7 +14,7 @@
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
                             {{--Boton Modal--}}
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agregar Ruta</button>
+                            <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agregar Ruta</button>
                              {{--Estructura del Modal--}}
                             <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -32,7 +32,24 @@
                                                 <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                                <label>Brigada</label> <select name="status" id="status" class="form-control">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                     <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                     <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                     <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                </select>
                                             </div>
                                             <div class="form-group">
                                                 <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
@@ -45,8 +62,8 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-white" data-dismiss="modal">  Close</button>
-                                            <button type="submit" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">Cerrar</button>
+                                            <button type="submit" class="btn btn-danger">Aceptar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -120,13 +137,11 @@
                                                     <option value="15">15</option>
                                                     <option value="16">16</option>
                                                 </select>
-                                                </select>
-                                                </select>
                                             </td>
                                         </tr>
                                         <tr class="gradeX">
                                             <td>26ETVD029H</td>
-                                            <td>TELESECUNDARIA 39</td>
+                                            <td>TELESECUNDARIA 29</td>
                                             <td>El GUamuchil</td>
                                             <td class="center">Alamos</td>
                                             <td class="center">901</td>
@@ -135,9 +150,194 @@
                                             <td class="center">Satelital</td>
                                             <td class="center">Mant.Completo</td>
                                             <td>Entrega de Laptop MX</td>
-                                            <td class="center">9</td>
+                                            <td class="center">
+                                                 <select name="status" id="status" class="form-control">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                     <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                     <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                     <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                </select>
+                                            </td>
                                         </tr>
-
+                                       
+                                       <tr class="gradeX">
+                                            <td>26ETVD029H</td>
+                                            <td>TELESECUNDARIA 29</td>
+                                            <td>El GUamuchil</td>
+                                            <td class="center">Alamos</td>
+                                            <td class="center">901</td>
+                                            <td>4</td>
+                                            <td>2004</td>
+                                            <td class="center">Satelital</td>
+                                            <td class="center">Mant.Completo</td>
+                                            <td>Entrega de Laptop MX</td>
+                                            <td class="center">
+                                                 <select name="status" id="status" class="form-control">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                     <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                     <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                     <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                       
+                                       <tr class="gradeX">
+                                            <td>26ETVD029H</td>
+                                            <td>TELESECUNDARIA 29</td>
+                                            <td>El GUamuchil</td>
+                                            <td class="center">Alamos</td>
+                                            <td class="center">901</td>
+                                            <td>4</td>
+                                            <td>2004</td>
+                                            <td class="center">Satelital</td>
+                                            <td class="center">Mant.Completo</td>
+                                            <td>Entrega de Laptop MX</td>
+                                            <td class="center">
+                                                 <select name="status" id="status" class="form-control">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                     <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                     <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                     <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                       
+                                       <tr class="gradeX">
+                                            <td>26ETVD029H</td>
+                                            <td>TELESECUNDARIA 29</td>
+                                            <td>El GUamuchil</td>
+                                            <td class="center">Alamos</td>
+                                            <td class="center">901</td>
+                                            <td>4</td>
+                                            <td>2004</td>
+                                            <td class="center">Satelital</td>
+                                            <td class="center">Mant.Completo</td>
+                                            <td>Entrega de Laptop MX</td>
+                                            <td class="center">
+                                                 <select name="status" id="status" class="form-control">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                     <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                     <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                     <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                       
+                                       <tr class="gradeX">
+                                            <td>26ETVD029H</td>
+                                            <td>TELESECUNDARIA 29</td>
+                                            <td>El GUamuchil</td>
+                                            <td class="center">Alamos</td>
+                                            <td class="center">901</td>
+                                            <td>4</td>
+                                            <td>2004</td>
+                                            <td class="center">Satelital</td>
+                                            <td class="center">Mant.Completo</td>
+                                            <td>Entrega de Laptop MX</td>
+                                            <td class="center">
+                                                 <select name="status" id="status" class="form-control">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                     <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                     <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                     <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                       
+                                       <tr class="gradeX">
+                                            <td>26ETVD029H</td>
+                                            <td>TELESECUNDARIA 29</td>
+                                            <td>El GUamuchil</td>
+                                            <td class="center">Alamos</td>
+                                            <td class="center">901</td>
+                                            <td>4</td>
+                                            <td>2004</td>
+                                            <td class="center">Satelital</td>
+                                            <td class="center">Mant.Completo</td>
+                                            <td>Entrega de Laptop MX</td>
+                                            <td class="center">
+                                                 <select name="status" id="status" class="form-control">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                     <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                     <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                     <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                       
+                                       
                                        
                                     </tbody>
                                     <tfoot>

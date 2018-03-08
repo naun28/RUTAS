@@ -4,23 +4,18 @@
 
     <div class="row col-lg-14 ">
      <div class="ibox-content m-b-sm border-bottom">
+        <form name="form-usu" method="POST" action="#">
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="form-group">
                             <label class="control-label" for="product_name">Nombre(s)</label>
-                            <input type="text" id="product_name" name="product_name" value="" placeholder="Nombre(s)" class="form-control">
+                            <input type="text" id="product_name" name="product_name" value="" placeholder="Nombre(s)" class="form-control" required="Nombre">
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
                             <label class="control-label" for="price">Apellido(s)</label>
-                            <input type="text" id="price" name="price" value="" placeholder="Apellido(s)" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="form-group">
-                            <label class="control-label" for="quantity">Telefono</label>
-                            <input type="text" required="digits" id="quantity" name="quantity" value="" placeholder="Telefono" class="form-control">
+                            <input type="text" id="price" name="price" value="" placeholder="Apellido(s)" class="form-control" required="Apellido">
                         </div>
                     </div>
                     <div class="col-sm-2">
@@ -34,6 +29,29 @@
                             </select>
                         </div>
                     </div>
+                    <div class="col-sm-2">
+                        <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label class="control-label" for="price">Correo</label>
+                            <input type="email" id="price" name="price" value="" placeholder="Correo" class="form-control" value="{{ old('email') }}" required>
+                            @if ($errors->has('email'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('email') }}</strong>
+                            </span>
+                            @endif
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                    <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                        <label class="control-label" for="pass">Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Contraseña" name="password" required>
+                        @if ($errors->has('password'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('password') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                    </div>
+                     
                     <div class="col-md-2">
                         <div class="form-group">
                             <label class="control-label" for="boton">&nbsp</label><br>
@@ -41,7 +59,7 @@
                         </div>
                     </div>
                   </div>
-
+                  </form>
             </div>
   </div>
   <div class="wrapper wrapper-content animated fadeInRight">
