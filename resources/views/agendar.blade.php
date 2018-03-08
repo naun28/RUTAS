@@ -8,20 +8,21 @@
 
             </div>
         </div>
-        <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="wrapper wrapper-content animated ">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agregar Ruta</button>
+                            {{--Boton Modal--}}
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agregar Ruta</button>
+                             {{--Estructura del Modal--}}
                             <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
                                 <div class="modal-dialog">
-                                <div class="modal-content animated bounceInRight">
+                                <div class="modal-content animated">
                                         <div class="modal-header">
-                                            <button type="button" class="close btn btn-danger" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                             <i class="fa fa-laptop modal-icon"></i>
                                             <h4 class="modal-title">Agregar Ruta</h4>
-                                            
                                         </div>
                                         <div class="modal-body">
                                             <div class="form-group">
@@ -45,11 +46,12 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-white" data-dismiss="modal">  Close</button>
-                                            <button type="submit" class="btn btn-danger">Guardar</button>
+                                            <button type="submit" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                             {{--Estructura de la tabla --}}
                             <div class="ibox-tools">
                                 <a class="collapse-link">
                                     <i class="fa fa-chevron-up"></i>
@@ -74,73 +76,83 @@
                                 <table class="table table-striped table-bordered table-hover dataTables-example" >
                                     <thead>
                                         <tr>
-                                            <th>Rendering engine</th>
-                                            <th>Browser</th>
-                                            <th>Platform(s)</th>
-                                            <th>Engine version</th>
-                                            <th>CSS grade</th>
+                                            <th>Clave</th>
+                                            <th>Escuela</th>
+                                            <th>Localidad</th>
+                                            <th>Municipio</th>
+                                            <th>Zona</th>
+                                            <th>N. Equipos</th>
+                                            <th>Año de Equipo</th>
+                                            <th>Conectividad</th>
+                                            <th>Motivo</th>
+                                            <th>Accion</th>
+                                            <th>Brigada</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="gradeX">
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 4.0
+                                            <td>26ETVD029H</td>
+                                            <td>TELESECUNDARIA 29</td>
+                                            <td>El GUamuchil</td>
+                                            <td class="center">Alamos</td>
+                                            <td class="center">901</td>
+                                            <td>4</td>
+                                            <td>2004</td>
+                                            <td class="center">Satelital</td>
+                                            <td class="center">Mant.Completo</td>
+                                            <td>Entrega de Laptop MX</td>
+                                            <td class="center">
+                                                 <select name="status" id="status" class="form-control">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                     <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                     <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                     <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                </select>
+                                                </select>
+                                                </select>
                                             </td>
-                                            <td>Win 95+</td>
-                                            <td class="center">4</td>
-                                            <td class="center">X</td>
                                         </tr>
-                                        <tr class="gradeC">
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 5.0
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5</td>
-                                            <td class="center">C</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 5.5
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5.5</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 6
-                                            </td>
-                                            <td>Win 98+</td>
-                                            <td class="center">6</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 7</td>
-                                            <td>Win XP SP2+</td>
-                                            <td class="center">7</td>
-                                            <td class="center">A</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Trident</td>
-                                            <td>AOL browser (AOL desktop)</td>
-                                            <td>Win XP</td>
-                                            <td class="center">6</td>
-                                            <td class="center">A</td>
+                                        <tr class="gradeX">
+                                            <td>26ETVD029H</td>
+                                            <td>TELESECUNDARIA 39</td>
+                                            <td>El GUamuchil</td>
+                                            <td class="center">Alamos</td>
+                                            <td class="center">901</td>
+                                            <td>4</td>
+                                            <td>2004</td>
+                                            <td class="center">Satelital</td>
+                                            <td class="center">Mant.Completo</td>
+                                            <td>Entrega de Laptop MX</td>
+                                            <td class="center">9</td>
                                         </tr>
 
+                                       
                                     </tbody>
                                     <tfoot>
-                                        <tr>
-                                            <th>Rendering engine</th>
-                                            <th>Browser</th>
-                                            <th>Platform(s)</th>
-                                            <th>Engine version</th>
-                                            <th>CSS grade</th>
+                                       <tr>
+                                            <th>Clave</th>
+                                            <th>Escuela</th>
+                                            <th>Localidad</th>
+                                            <th>Municipio</th>
+                                            <th>Zona</th>
+                                            <th>N. Equipos</th>
+                                            <th>Año de Equipo</th>
+                                            <th>Conectividad</th>
+                                            <th>Motivo</th>
+                                            <th>Accion</th>
+                                            <th>Brigada</th>
                                         </tr>
                                     </tfoot>
                                 </table>
