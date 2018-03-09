@@ -4,18 +4,18 @@
 
     <div class="row col-lg-14 ">
      <div class="ibox-content m-b-sm border-bottom">
-        <form name="form-usu" method="POST" action="#">
+        <form name="form-usu" method="POST" action="">
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="form-group">
                             <label class="control-label" for="product_name">Nombre(s)</label>
-                            <input type="text" id="product_name" name="product_name" value="" placeholder="Nombre(s)" class="form-control" required="Nombre">
+                            <input type="text"  pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" title="Solo Permite Letras" id="product_name" name="product_name" value="" placeholder="Nombre(s)" class="form-control" required="Nombre">
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
                             <label class="control-label" for="price">Apellido(s)</label>
-                            <input type="text" id="price" name="price" value="" placeholder="Apellido(s)" class="form-control" required="Apellido">
+                            <input type="text" pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" id="price" name="price" value="" placeholder="Apellido(s)" title="Solo Permite Letras"  class="form-control" required="Apellido">
                         </div>
                     </div>
                     <div class="col-sm-2">
@@ -30,9 +30,15 @@
                         </div>
                     </div>
                     <div class="col-sm-2">
+                        <div class="form-group">
+                            <label class="control-label" for="price">Telefono</label>
+                            <input type="tel" pattern="^(\d{10})$" id="price" name="price" value="" placeholder="Telefono" maxlength="10"  title="Formato 000-0000000" class="form-control" required="Telefono">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
                         <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
                             <label class="control-label" for="price">Correo</label>
-                            <input type="email" id="price" name="price" value="" placeholder="Correo" class="form-control" value="{{ old('email') }}" required>
+                            <input type="email" title="Formato@ejemplo.com" id="price" name="price" value="" placeholder="Correo" class="form-control" value="{{ old('email') }}" required>
                             @if ($errors->has('email'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('email') }}</strong>
@@ -43,7 +49,7 @@
                     <div class="col-sm-2">
                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                         <label class="control-label" for="pass">Contraseña</label>
-                        <input type="password" class="form-control" placeholder="Contraseña" name="password" required>
+                        <input type="password" pattern="[A-Za-z0-9!?-]{6,12}" class="form-control" placeholder="Contraseña" name="password" required>
                         @if ($errors->has('password'))
                         <span class="help-block">
                             <strong>{{ $errors->first('password') }}</strong>
@@ -55,7 +61,7 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label class="control-label" for="boton">&nbsp</label><br>
-                            <button type="submit" class="btn btn-danger"><li class="fa fa-plus-square"></li> Agregar</button>
+                            <button type="submit" class="btn btn-danger btn btn-xs" ><li class="fa fa-plus-square"></li> Agregar</button>
                         </div>
                     </div>
                   </div>
