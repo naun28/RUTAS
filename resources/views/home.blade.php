@@ -15,9 +15,7 @@
                     </div>
                 @endif
 
-                Pagina principal
-                que vamos a poner aqui morro
-                
+                Pagina principal 
             </div>
         </div>
     </div>
