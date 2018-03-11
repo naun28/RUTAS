@@ -2,72 +2,13 @@
 
 @section('content')
 <div class="row">
-    <div class="col 12 ">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title"><h5>Agendar Rutas</h5>
-
-            </div>
-        </div>
+    
         <div class="wrapper wrapper-content animated ">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            {{--Boton Modal--}}
-                            <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agregar Ruta</button>
-                             {{--Estructura del Modal--}}
-                            <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                <div class="modal-dialog">
-                                <div class="modal-content animated">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                            <i class="fa fa-laptop modal-icon"></i>
-                                            <h4 class="modal-title">Agregar Ruta</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="form-group">
-                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Brigada</label> <select name="status" id="status" class="form-control">
-                                                    <option value="1" selected>1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                     <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                     <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                     <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-white" data-dismiss="modal">Cerrar</button>
-                                            <button type="submit" class="btn btn-danger">Aceptar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <h5>Agendar Rutas</h5>
                              {{--Estructura de la tabla --}}
                             <div class="ibox-tools">
                                 <a class="collapse-link">
@@ -102,8 +43,7 @@
                                             <th>Año de Equipo</th>
                                             <th>Conectividad</th>
                                             <th>Motivo</th>
-                                            <th>Accion</th>
-                                            <th>Brigada</th>
+                                            <th>Agendar</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -117,8 +57,64 @@
                                             <td>2004</td>
                                             <td class="center">Satelital</td>
                                             <td class="center">Mant.Completo</td>
-                                            <td>Entrega de Laptop MX</td>
-                                            <td>1</td>
+                                            <td> {{--Boton Modal--}}
+                                                <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agendar</button>
+                                            </td>
+                                             {{--Estructura del Modal--}}
+                                            <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content animated">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                            <i class="fa fa-laptop modal-icon"></i>
+                                                            <h4 class="modal-title">Agregar Ruta</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                            <div class="form-group">
+                                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Brigada</label> <select name="status" id="status" class="form-control">
+                                                                    <option value="1" selected>1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                     <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                     <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                     <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Cerrar</button>
+                                                            <button type="submit" class="btn btn-danger">Aceptar</button>
+                                                        </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             
                                         </tr>
                                         <tr class="gradeX">
@@ -131,8 +127,9 @@
                                             <td>2004</td>
                                             <td class="center">Satelital</td>
                                             <td class="center">Mant.Completo</td>
-                                            <td>Entrega de Laptop MX</td>
-                                            <td>1</td>
+                                             <td> {{--Boton Modal--}}
+                                                <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agendar</button>
+                                            </td>
                                             
                                         </tr>
                                        
@@ -146,8 +143,10 @@
                                             <td>2004</td>
                                             <td class="center">Satelital</td>
                                             <td class="center">Mant.Completo</td>
-                                            <td>Entrega de Laptop MX</td>
-                                            <td>1</td>
+                                             <td> {{--Boton Modal--}}
+                                                <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agendar</button>
+                                            </td>
+                                         
                                             
                                         </tr>
                                        
@@ -161,8 +160,10 @@
                                             <td>2004</td>
                                             <td class="center">Satelital</td>
                                             <td class="center">Mant.Completo</td>
-                                            <td>Entrega de Laptop MX</td>
-                                            <td>1</td>
+                                             <td> {{--Boton Modal--}}
+                                                <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agendar</button>
+                                            </td>
+                                            
                                             
                                         </tr>
                                        
@@ -176,8 +177,10 @@
                                             <td>2004</td>
                                             <td class="center">Satelital</td>
                                             <td class="center">Mant.Completo</td>
-                                            <td>Entrega de Laptop MX</td>
-                                            <td>1</td>
+                                             <td> {{--Boton Modal--}}
+                                                <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agendar</button>
+                                            </td>
+                                            
                                             
                                         </tr>
                                        
@@ -191,8 +194,10 @@
                                             <td>2004</td>
                                             <td class="center">Satelital</td>
                                             <td class="center">Mant.Completo</td>
-                                            <td>Entrega de Laptop MX</td>
-                                            <td>1</td>
+                                             <td> {{--Boton Modal--}}
+                                                <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agendar</button>
+                                            </td>
+                                           
                                             
                                         </tr>
                                        
@@ -206,8 +211,10 @@
                                             <td>2004</td>
                                             <td class="center">Satelital</td>
                                             <td class="center">Mant.Completo</td>
-                                            <td>Entrega de Laptop MX</td>
-                                            <td>1</td>
+                                             <td> {{--Boton Modal--}}
+                                                <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal"><li class="fa fa-plus-square"></li> Agendar</button>
+                                            </td>
+                                            
                                             
                                         </tr>
                                        
@@ -225,8 +232,7 @@
                                             <th>Año de Equipo</th>
                                             <th>Conectividad</th>
                                             <th>Motivo</th>
-                                            <th>Accion</th>
-                                            <th>Brigada</th>
+                                            <th>Agendar</th>
                                         </tr>
                                     </tfoot>
                                 </table>

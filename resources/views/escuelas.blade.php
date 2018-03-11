@@ -36,7 +36,7 @@
                                             <th data-hide="all">N. Equipos</th>
                                             <th data-hide="all">Equipo</th>
                                             <th data-hide="all">Reequipo</th>
-                                            <th data-hide="all">Servicio</th>
+                                            <th data-hide="all">Servicio Solicitado</th>
                                      
                                 </tr>
                                 </thead>
