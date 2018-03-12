@@ -45,16 +45,16 @@ class HomeController extends Controller
     }
 
 
-    public function calculo(){
-        return view('calc');
+    public function calculomet(){
+        return view('costo');
     }
-    public function brigadista(){
-        return view('brig');
+    public function brigadistamet(){
+        return view('brigadista');
     }
-    public function secretaria(){
-        return view('secret');
+    public function secretariamet(){
+        return view('secretaria');
     }
-    public function reportes(){
-        return view('repor');
+    public function reportesmet(){
+        return view('reporte');
     }
 }

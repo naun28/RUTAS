@@ -32,6 +32,22 @@
                         </div> --}}
                     </div>
                     <div class="ibox-content">
+                    
+                        <div class="form-group " id="data_5">
+                            <center><b><label class="font-normal">Selecciona el rango de fechas que desea buscar</label></b></center>
+                            <div class="input-daterange input-group" id="datepicker">
+                                <form class="form-group" action="#" method="POST">
+                                <center><b><span class="input-group-addon">Fecha inicial</span></b></center>
+                                <input type="text" class="input-sm form-control" name="start" value="05/14/2014"/><br><br>
+                                <center><b><span class="input-group-addon">Fecha final</span></b></center>
+                                <input type="text" class="input-sm form-control" name="end" value="05/22/2014" /><br><br>
+                                <center><input type="submit" class="btn btn-danger form-group"  value="Buscar" /></center>
+                                </form>
+                            </div>
+                        </div>
+                    
+
+
                     <div class="table-responsive">
                     <table class="table table-striped table-bordered table-hover dataTables-example" >
                     <thead>

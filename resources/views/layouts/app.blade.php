@@ -31,16 +31,16 @@
       <a href="{{ route('perfilesusuarios') }}"><i class="fa fa-home"></i> <span class="nav-label">Perfil de Usuarios</span></a>
     </li>
     <li class="active">
-      <a href="{{ route('calc') }}"><i class="fa fa-usd"></i> <span class="nav-label">Calculo de costos</span></a>
+      <a href="{{ route('costo') }}"><i class="fa fa-usd"></i> <span class="nav-label">Calculo de costos</span></a>
     </li>
     <li class="active">
-      <a href="{{ route('brig') }}"><i class="fa fa-user-o"></i> <span class="nav-label">Brigadista</span></a>
+      <a href="{{ route('brigadista') }}"><i class="fa fa-user-o"></i> <span class="nav-label">Brigadista</span></a>
     </li>        
     <li class="active">
-      <a href="{{ route('secret') }}"><i class="fa fa-user-o"></i> <span class="nav-label">Secretarias</span></a>
+      <a href="{{ route('secretaria') }}"><i class="fa fa-user-o"></i> <span class="nav-label">Secretarias</span></a>
     </li>
     <li class="active">
-      <a href="{{ route('repor') }}"><i class="fa fa-newspaper-o"></i> <span class="nav-label">Reportes</span></a>
+      <a href="{{ route('reporte') }}"><i class="fa fa-newspaper-o"></i> <span class="nav-label">Reportes</span></a>
     </li>
 
   </ul>

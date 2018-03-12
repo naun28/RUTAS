@@ -24,7 +24,7 @@ Route::get('/usuarios', 'HomeController@users')->name('usuarios');
 Route::get('/agendar', 'HomeController@agenda')->name('agendar');
 Route::get('/perfilesusuarios', 'HomeController@perfil')->name('perfilesusuarios');
 
-Route::get('/calc', 'HomeController@calculo')->name('calc');
-Route::get('/brig', 'HomeController@brigadista')->name('brig');
-Route::get('/secret', 'HomeController@secretaria')->name('secret');
-Route::get('/repor', 'HomeController@reportes')->name('repor');
+Route::get('/costo', 'HomeController@calculomet')->name('costo');
+Route::get('/brigadista', 'HomeController@brigadistamet')->name('brigadista');
+Route::get('/secretaria', 'HomeController@secretariamet')->name('secretaria');
+Route::get('/reporte', 'HomeController@reportesmet')->name('reporte');
