@@ -57,4 +57,7 @@ class HomeController extends Controller
     public function reportesmet(){
         return view('reporte');
     }
+    public function listadomet(){
+        return view('listado');
+    }
 }

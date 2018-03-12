@@ -34,6 +34,9 @@
       <a href="{{ route('costo') }}"><i class="fa fa-usd"></i> <span class="nav-label">Calculo de costos</span></a>
     </li>
     <li class="active">
+      <a href="{{ route('listado') }}"><i class="fa fa-list"></i> <span class="nav-label">Listado</span></a>
+    </li>
+    <li class="active">
       <a href="{{ route('brigadista') }}"><i class="fa fa-user-o"></i> <span class="nav-label">Brigadista</span></a>
     </li>        
     <li class="active">

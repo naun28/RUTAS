@@ -37,7 +37,9 @@
                                     <th data-hide="all">Otrocampo</th>
                                     <th data-hide="all">Otrocampo</th>
                                     <th data-hide="all">Fecha ultima visita</th>
+                                    <th data-hide="all">Comentarios</th>
                                     <th>Estatus</th>
+                                    <th> <input type="button" name="" value="Agregar comentarios"> </th>
                                 </tr>
                                 </thead>
                                 <tbody>

@@ -28,3 +28,4 @@ Route::get('/costo', 'HomeController@calculomet')->name('costo');
 Route::get('/brigadista', 'HomeController@brigadistamet')->name('brigadista');
 Route::get('/secretaria', 'HomeController@secretariamet')->name('secretaria');
 Route::get('/reporte', 'HomeController@reportesmet')->name('reporte');
+Route::get('/listado', 'HomeController@listadomet')->name('listado');
