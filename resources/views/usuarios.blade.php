@@ -90,7 +90,7 @@
                                             <h4 class="modal-title">Agregar Usuario</h4>
                                         </div>
                                         <div class="modal-body">
-                                          <form class="form-group">
+                                          <form id="formLimpiar" class="form-group">
                                             <div class="form-group col-md-4">
                                                 <label>Nombre(s)</label><input type="text" placeholder="Nombre(s)" class="form-control
                                                 " pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" title="Solo Permite Letras" required="">
@@ -137,7 +137,7 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-white" data-dismiss="modal">Cerrar</button>
+                                           <button type="button" id="btnLimpiar" value="Cerrar" class="btn btn-white" data-dismiss="modal">Cerrar</button>
                                             <button type="submit" class="btn btn-danger">Aceptar</button>
                                         </div>
                                         </form>

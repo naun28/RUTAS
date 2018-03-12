@@ -9,6 +9,7 @@
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
                             <h5>Agendar Rutas</h5>
+
                              {{--Estructura de la tabla --}}
                             <div class="ibox-tools">
                                 <a class="collapse-link">
@@ -70,12 +71,40 @@
                                                             <h4 class="modal-title">Agregar Ruta</h4>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <form>
+                                                            <form id="formLimpiar">
                                                             <div class="form-group">
                                                                 <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
                                                             </div>
+                                                            {{-- <div class="form-group">
+                                                                <label>Semanas</label><input class="form-control" type="text" name="daterange" placeholder="Escuela" value="01/01/2015 - 01/31/2015" />
+                                                            </div> --}}
+                                                            <div class="form-group" id="data_5">
+                                                                <label>Fecha</label>
+                                                                <div class="input-daterange input-group" id="datepicker">
+                                                                    <input type="text" class="input-sm form-control" name="start" value="05/14/2014"/>
+                                                                    <span class="input-group-addon">Al</span>
+                                                                    <input type="text" class="input-sm form-control" name="end" value="05/22/2014" />
+                                                                </div>
+                                                            </div>
                                                             <div class="form-group">
-                                                                <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
+                                                                <label>Jefe de Brigada</label> <select name="status" id="status" class="form-control">
+                                                                    <option value="1" selected>Jesus Sabori</option>
+                                                                    <option value="2">Carlos Lafarga</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                     <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                     <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                     <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                </select>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label>Brigada</label> <select name="status" id="status" class="form-control">
@@ -108,7 +137,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Cerrar</button>
+                                                            <button id="btnLimpiar" type="button" class="btn btn-white" data-dismiss="modal">Cerrar</button>
                                                             <button type="submit" class="btn btn-danger">Aceptar</button>
                                                         </div>
                                                         </form>
