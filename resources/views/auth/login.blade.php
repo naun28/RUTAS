@@ -29,9 +29,9 @@
        </div>
        <button type="submit" class="btn btn-danger block full-width m-b">Entrar</button>
 
-       {{-- <a href="{{ route('password.request') }}"><small>Forgot password?</small></a> 
+       {{-- --}}<a href="{{ route('password.request') }}"><small>Forgot password?</small></a> 
        <p class="text-muted text-center"><small>No tienes una cuenta?</small></p>
-       <a class="btn btn-sm btn-white btn-block" href="{{ route('register') }}">Crea una cuenta</a>--}}
+       <a class="btn btn-sm btn-white btn-block" href="{{ route('register') }}">Crea una cuenta</a>
       </form>
       <p class="m-t"> <small>Secretaria de Educación y Cultura &copy; {{ date('Y') }}</small> </p>
     </div>
