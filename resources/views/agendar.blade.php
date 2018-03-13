@@ -55,8 +55,18 @@
                                         <div class="modal-body">
                                             <form id="formLimpiar">
                                                 <div class="form-group">
+                                                    <label>Clave</label><input type="text" placeholder="Clave" class="form-control">
+                                                </div>
+                                                <div class="form-group">
                                                     <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
                                                 </div>
+                                                <div class="form-group">
+                                                    <label>Municipio</label><input type="text" placeholder="Municipio" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Domicilio</label><input type="text" placeholder="Domicilio" class="form-control">
+                                                </div>
+
                                                 {{-- <div class="form-group">
                                                     <label>Semanas</label><input class="form-control" type="text" name="daterange" placeholder="Escuela" value="01/01/2015 - 01/31/2015" />
                                                 </div> --}}
@@ -108,16 +118,6 @@
                                                         <option value="16">16</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Escuela</label><input type="text" placeholder="Escuela" class="form-control">
-                                                </div>
-
                                                 <div class="modal-footer">
                                                     <button id="btnLimpiar" type="button" class="btn btn-white" data-dismiss="modal">Cerrar</button>
                                                     <button type="submit" class="btn btn-danger">Aceptar</button>
@@ -283,7 +283,7 @@
                             <td>2004</td>
                             <td class="center">Satelital</td>
                             <td class="center">Mant.Completo</td>
-                            
+
 
                         </tr>
                         <tr class="gradeX">
@@ -325,7 +325,7 @@
                             <td>2004</td>
                             <td class="center">Satelital</td>
                             <td class="center">Mant.Completo</td>
-                            
+
 
                         </tr>
 
@@ -386,7 +386,7 @@
                         <th>Año de Equipo</th>
                         <th>Conectividad</th>
                         <th>Motivo</th>
-                        
+
                     </tr>
                 </tfoot>
             </table>
