@@ -2,15 +2,15 @@
 
 @section('content')
 <div class="row">
- <!--********************************************************************* -->
- <div class="col-lg-12">
+   <!--********************************************************************* -->
+   <div class="col-lg-12">
     <div class="tabs-container">
       <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#tab-1"> Agendar Ruta</a></li>
         <li class=""><a data-toggle="tab" href="#tab-2">Rutas Agendadas</a></li>
     </ul>
     <div class="tab-content">
-     <div id="tab-1" class="tab-pane active">
+       <div id="tab-1" class="tab-pane active">
         <div class="panel-body">
           <div class="ibox-content">
             <div class="table-responsive">
@@ -234,7 +234,7 @@
 
                     </tbody>
                     <tfoot>
-                     <tr>
+                       <tr>
                         <th>Clave</th>
                         <th>Escuela</th>
                         <th>Localidad</th>
@@ -248,10 +248,10 @@
                     </tr>
                 </tfoot>
             </table>
-            </div>
-
         </div>
+
     </div>
+</div>
 </div>
 <div id="tab-2" class="tab-pane">
     <div class="panel-body">
@@ -283,7 +283,7 @@
                             <td>2004</td>
                             <td class="center">Satelital</td>
                             <td class="center">Mant.Completo</td>
-                           
+                            
 
                         </tr>
                         <tr class="gradeX">
@@ -325,7 +325,7 @@
                             <td>2004</td>
                             <td class="center">Satelital</td>
                             <td class="center">Mant.Completo</td>
-                           
+                            
 
                         </tr>
 
@@ -376,7 +376,7 @@
 
                     </tbody>
                     <tfoot>
-                     <tr>
+                       <tr>
                         <th>Clave</th>
                         <th>Escuela</th>
                         <th>Localidad</th>
@@ -386,22 +386,22 @@
                         <th>Año de Equipo</th>
                         <th>Conectividad</th>
                         <th>Motivo</th>
-                       
+                        
                     </tr>
                 </tfoot>
             </table>
-            </div>
-
         </div>
 
     </div>
+
+</div>
 </div>
 </div>
 
 
-    </div>
-   </div>
- </div>
+</div>
+</div>
+</div>
 
 
 
