@@ -33,18 +33,17 @@
                     </div>
                     <div class="ibox-content">
                     
-                        <div class="form-group " id="data_5">
+                         <div class="form-group " id="data_5">
                             <center><b><label class="font-normal">Selecciona el rango de fechas que desea buscar</label></b>
-                            <div class=" input-group" id="datepicker">
-                                <form class="form-group" action="#" method="POST">
-                                <center><b><span class="input-group-addon">Fecha inicial</span></b></center>
-                                <input type="text" class="input-daterange input-sm form-control" name="start" value="01/01/2018"/>
-                                <center><b><span class="input-group-addon">Fecha final</span></b></center>
-                                <input type="text" class="input-daterange input-sm form-control" name="end" value="02/01/2018" /><br><br>
-                                <center><input type="submit" class="btn btn-danger form-group"  value="Buscar" /></center>
-                                </form>
-                            </div></center>
-                        </div>
+                                 <div class="form-group" id="data_5">
+                                                                <label>Fecha</label>
+                                                                <div class="input-daterange input-group" id="datepicker">
+                                                                    <input type="text" class="input-sm form-control" name="start" value="05/14/2014"/>
+                                                                    <span class="input-group-addon">Al</span>
+                                                                    <input type="text" class="input-sm form-control" name="end" value="05/22/2014" />
+                                                                </div>
+                                                            </div>
+                            </center>
                     
 
 

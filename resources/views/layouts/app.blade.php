@@ -31,11 +31,11 @@
       <a href="{{ route('perfilesusuarios') }}"><i class="fa fa-home"></i> <span class="nav-label">Perfil de Usuarios</span></a>
     </li>
     <li class="active">
-      <a href="{{ route('costo') }}"><i class="fa fa-usd"></i> <span class="nav-label">Calculo de costos</span></a>
+      <a href="{{ route('costo') }}"><i class="fa fa-usd"></i> <span class="nav-label">Viáticos</span></a>
     </li>
-    <li class="active">
+    {{-- <li class="active">
       <a href="{{ route('listado') }}"><i class="fa fa-list"></i> <span class="nav-label">Listado</span></a>
-    </li>
+    </li> --}}
     <li class="active">
       <a href="{{ route('brigadista') }}"><i class="fa fa-user-o"></i> <span class="nav-label">Brigadista</span></a>
     </li>        

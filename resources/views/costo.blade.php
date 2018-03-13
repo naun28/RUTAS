@@ -2,43 +2,40 @@
 
 @section('content')
 <div class="row">
-  <div class="col 12 ">
-    <div class="ibox float-e-margins">
-      <div class="ibox-title"><h5>Calculo de costos</h5>
-
-      </div>
-
-      
-    </div>
-    <div class="col-lg-12">
-      <div class="ibox float-e-margins">
-        <div class="ibox-title">
-          <h5> Asignar costos por operacion </h5>
-          <div class="ibox-tools">
-                       {{--  <a class="collapse-link">
-                            <i class="fa fa-chevron-up"></i>
-                        </a>
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-wrench"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-user">
-                            <li><a href="#">Config option 1</a>
-                            </li>
-                            <li><a href="#">Config option 2</a>
-                            </li>
-                        </ul>
-                        <a class="close-link">
-                            <i class="fa fa-times"></i>
-                          </a> --}}
-                        </div>
-                      </div>
-                      <div class="ibox-content">
-                        <div class="row">
-                         <form method="get" class="form-horizontal col-lg-12">
+ <!--********************************************************************* -->
+ <div class="col-lg-12">
+    <div class="tabs-container">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#tab-1">Costos</a></li>
+        <li class=""><a data-toggle="tab" href="#tab-2">Historial</a></li>
+    </ul>
+    <div class="tab-content">
+     <div id="tab-1" class="tab-pane active">
+        <div class="panel-body">
+          <div class="ibox-content">
+            <div class="row">
+                         <form method="get" class="form-horizontal">
                           <div class="col-lg-12">
                             <div class="col-lg-6">
                               <div class="form-group"><label class="col-sm-2 control-label">No. brigada</label>
-                                <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                <div class="col-sm-10"><select data-placeholder="Selecciona una brigada" class="chosen-select col-sm-10" multiple style="width:350px;" tabindex="4">
+                                      {{-- se cargaran de una base de datos--}}
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6">6</option>
+                                      <option value="7">7</option>
+                                      <option value="8">8</option>
+                                      <option value="9">9</option>
+                                      <option value="10">10</option>
+                                      <option value="11">11</option>
+                                      <option value="12">12</option>
+                                      <option value="13">13</option>
+                                      <option value="14">14</option>
+
+                                    </select></div>
                               </div>
                               <div class="form-group"><label class="col-sm-2 control-label">Brigadista</label>
                                 <div class="col-sm-10">
@@ -218,6 +215,9 @@
                                 <div class="form-group"><label class="col-sm-2 control-label">C. de caminos</label>
                                   <div class="col-sm-10"><input type="text" class="form-control"></div>
                                 </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Casetas</label>
+                                  <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
                                 <div class="form-group"><label class="col-sm-2 control-label">Total real</label>
                                   <div class="col-sm-10"><input type="text" class="form-control"></div>
                                 </div>
@@ -226,11 +226,96 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              @endsection
+                          </div>      
+          </div>
+        </div>
+    </div>
+<div id="tab-2" class="tab-pane">
+    <div class="panel-body">
+        <div class="ibox-content">
+             <div class="form-group " id="data_5">
+                            <center><b><label class="font-normal">Selecciona el rango de fechas que desea buscar</label></b>
+                                 <div class="form-group" id="data_5">
+                                                                <label>Fecha</label>
+                                                                <div class="input-daterange input-group" id="datepicker">
+                                                                    <input type="text" class="input-sm form-control" name="start" value="05/14/2014"/>
+                                                                    <span class="input-group-addon">Al</span>
+                                                                    <input type="text" class="input-sm form-control" name="end" value="05/22/2014" />
+                                                                </div>
+                                                            </div>
+                            </center>
+
+                        
+
+
+                        
+                        </div>
+                    <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover dataTables-example" >
+                    <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Lugar(es)</th>
+                                    <th data-hide="phone,tablet">Fechas</th>
+                                    <th data-hide="phone,tablet">Escuelas</th>
+                                    <th data-hide="phone,tablet">Dias</th>
+                                    <th data-hide="phone,tablet">Acciones</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="gradeX">
+                                    <td>Ramón Rodriguez</td>
+                                    <td>Guaymas
+                                    </td>
+                                    <td>12-03-2018</td>
+                                    <td class="center">00XXXXXXXX</td>
+                                    <td class="center"> 2 </td>
+                                    <td class="center"> <input class="btn btn-danger" type="button" name="" value="Ver a detalle"> </td>
+                                </tr>
+                                <tr class="gradeC">
+                                    <td>Naun Lara</td>
+                                    <td>Empalme
+                                    </td>
+                                    <td>15-03-2018</td>
+                                    <td class="center">00XXXXXXXX</td>
+                                    <td class="center"> 3 </td>
+                                    <td class="center"> <input class="btn btn-danger" type="button" name="" value="Ver s detalle"> </td>
+                                </tr>
+                                <tr class="gradeA">
+                                    <td>Alberto Rodriguez</td>
+                                    <td>Navojoa
+                                    </td>
+                                    <td>20-03-2018</td>
+                                    <td class="center">00XXXXXXXX</td>
+                                    <td class="center"> 3 </td>
+                                    <td class="center"> <input class="btn btn-danger" type="button" name="" value="Ver a detalle"> </td>
+                                </tr>
+                                
+                                </tbody>
+                    <tfoot>
+                    <tr>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
+                        <th>[Campo]</th>
+                    </tr>
+                    </tfoot>
+                    </table>
+                        </div>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+   </div>
+ </div>
+
+
+
+
+   <!--********************************************************************* -->
+    
+        
+
+@endsection

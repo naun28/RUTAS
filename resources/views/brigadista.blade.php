@@ -38,8 +38,8 @@
                                     <th data-hide="all">Otrocampo</th>
                                     <th data-hide="all">Fecha ultima visita</th>
                                     <th data-hide="all">Comentarios</th>
-                                    <th>Estatus</th>
-                                    <th> <input type="button" name="" value="Agregar comentarios"> </th>
+                                    
+                                    <th>Acción</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -52,6 +52,7 @@
                                     <td>20%</td>
                                     <td>Jul 14, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Alpha project</td>
@@ -62,6 +63,7 @@
                                     <td>40%</td>
                                     <td>Jul 16, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Betha project</td>
@@ -72,6 +74,7 @@
                                     <td>75%</td>
                                     <td>Jul 18, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Gamma project</td>
@@ -82,6 +85,7 @@
                                     <td>18%</td>
                                     <td>Jul 22, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Alpha project</td>
@@ -92,6 +96,7 @@
                                     <td>40%</td>
                                     <td>Jul 16, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Project
@@ -104,6 +109,7 @@
                                     <td>20%</td>
                                     <td>Jul 14, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Gamma project</td>
@@ -114,6 +120,7 @@
                                     <td>18%</td>
                                     <td>Jul 22, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Project
@@ -126,6 +133,7 @@
                                     <td>20%</td>
                                     <td>Jul 14, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Alpha project</td>
@@ -136,6 +144,7 @@
                                     <td>40%</td>
                                     <td>Jul 16, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Betha project</td>
@@ -146,6 +155,7 @@
                                     <td>75%</td>
                                     <td>Jul 18, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Gamma project</td>
@@ -156,6 +166,7 @@
                                     <td>18%</td>
                                     <td>Jul 22, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Alpha project</td>
@@ -166,6 +177,7 @@
                                     <td>40%</td>
                                     <td>Jul 16, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Project
@@ -178,6 +190,7 @@
                                     <td>20%</td>
                                     <td>Jul 14, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 <tr>
                                     <td>Gamma project</td>
@@ -188,6 +201,7 @@
                                     <td>18%</td>
                                     <td>Jul 22, 2013</td>
                                     <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                    <td> <input class="btn btn-danger" type="button" name="" value="Agregar comentarios"> </td>
                                 </tr>
                                 </tbody>
                                 <tfoot>
