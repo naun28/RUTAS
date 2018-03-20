@@ -53,7 +53,7 @@
                                             <h4 class="modal-title">Agregar Ruta</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <form id="formLimpiar">
+                                            <form id="formLimpiar" method="post" action="#">
                                                 <div class="form-group">
                                                     <label>Clave</label><input type="text" placeholder="Clave" class="form-control">
                                                 </div>
@@ -78,7 +78,7 @@
                                                         <input type="text" class="input-sm form-control" name="end" value="05/22/2014" />
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
+                                                <div class="form-group col-md-7">
                                                     <label>Jefe de Brigada</label> <select name="status" id="status" class="form-control">
                                                         <option value="1" selected>Jesus Sabori</option>
                                                         <option value="2">Carlos Lafarga</option>
@@ -98,26 +98,18 @@
                                                         <option value="16">16</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label>Brigada</label> <select name="status" id="status" class="form-control">
-                                                        <option value="1" selected>1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6">6</option>
-                                                        <option value="7">7</option>
-                                                        <option value="8">8</option>
-                                                        <option value="9">9</option>
-                                                        <option value="10">10</option>
-                                                        <option value="11">11</option>
-                                                        <option value="12">12</option>
-                                                        <option value="13">13</option>
-                                                        <option value="14">14</option>
-                                                        <option value="15">15</option>
-                                                        <option value="16">16</option>
-                                                    </select>
+                                                <div class="form-group col-md-4">
+                                                    <label>Brigada</label>
+                                                    <input type="text" placeholder="Brigada" readonly="Brigada" class="form-control">
                                                 </div>
+                                                <div class="form-group">
+                                                    <label>Integrantes</label>
+                                                    <textarea type="text" placeholder="Integrantes" readonly="Integrantes"  class="form-control" style="min-height: 100px; max-height: 100px; min-width: 550px; max-width: 550px;">
+                                                        
+                                                    </textarea>
+                                                    
+                                                </div>
+                                                
                                                 <div class="modal-footer">
                                                     <button id="btnLimpiar" type="button" class="btn btn-white" data-dismiss="modal">Cerrar</button>
                                                     <button type="submit" class="btn btn-danger">Aceptar</button>

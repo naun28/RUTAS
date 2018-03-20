@@ -108,15 +108,16 @@
                                                 <label>Contraseña</label><input type="password" placeholder="Contraseña" class="form-control" pattern="[A-Za-z0-9!?-]{6,12}" required="">
                                             </div>
                                             <div class="form-group ">
-                                                <label>Tipo de Usuario</label> <select name="tipouser" id="tipouser" class="form-control" onkeyup="habilitar" required="">
-                                                    <option value="1" selected>Brigadista</option>
+                                                <label>Tipo de Usuario</label> 
+                                                <select name="tipouser" id="tipouser" class="form-control chosen-container chosen-container-single"  onkeyup="habilitar" required="">
+                                                    <option value="1" >Brigadista</option>
                                                     <option value="2">Jefe de Brigada</option>
                                                     <option value="3">Mesa de Apoyo</option>
                                                     <option value="4">Administrador</option>
                                                 </select>
                                             </div>
-                                            <div id="ver">
-                                              <div id="1"  class="form-group">
+                                            <div id="ver" >
+                                              <div id="3"   class="form-group">
                                                 <label>N° de brigada</label> <select name="brigada" class="form-control">
                                                     <option value="1" selected>1</option>
                                                     <option value="2">2</option>
