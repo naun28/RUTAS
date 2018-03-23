@@ -90,36 +90,38 @@
                                             <h4 class="modal-title">Agregar Usuario</h4>
                                         </div>
                                         <div class="modal-body">
-                                          <form id="formLimpiar" class="form-group">
+                                          <form  method="POST" action="" id="formLimpiar" class="form-group">
+                                                {{ csrf_field() }}
                                             <div class="form-group col-md-4">
-                                                <label>Nombre(s)</label><input type="text" placeholder="Nombre(s)" class="form-control
+                                                <label>Nombre(s)</label><input type="text" name="nombres" placeholder="Nombre(s)" class="form-control
                                                 " pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" title="Solo Permite Letras" required="">
                                             </div>
                                              <div class="form-group col-md-4">
-                                                <label>Apellido(s)</label><input type="text" placeholder="Apellido(s)" class="form-control" pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" title="Solo Permite Letras" required="">
+                                                <label>Apellido(s)</label><input type="text" name="apellidos" placeholder="Apellido(s)" class="form-control" pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" title="Solo Permite Letras" required="">
                                             </div>
                                              <div class="form-group col-md-4">
-                                                <label>Telefono</label><input type="text" placeholder="Telefono" class="form-control" pattern="^(\d{10})$" maxlength="10"  title="Formato 000-0000000" required="">
+                                                <label>Telefono</label><input type="text" name="telefon" placeholder="Telefono" class="form-control" pattern="^(\d{10})$" maxlength="10"  title="Formato 000-0000000" required="">
                                             </div>
                                             <div class="form-group">
-                                                <label>Correo</label><input type="email" placeholder="Correo" class="form-control" required="">
+                                                <label>Correo</label><input type="email" name="correo" placeholder="Correo" class="form-control" required="">
                                             </div>
                                             <div class="form-group">
-                                                <label>Contraseña</label><input type="password" placeholder="Contraseña" class="form-control" pattern="[A-Za-z0-9!?-]{6,12}" required="">
+                                                <label>Contraseña</label><input type="password" name="password" placeholder="Contraseña" class="form-control" pattern="[A-Za-z0-9!?-]{6,12}" required="">
                                             </div>
                                             <div class="form-group ">
                                                 <label>Tipo de Usuario</label> 
                                                 <select name="tipouser" id="tipouser" class="form-control chosen-container chosen-container-single"  onkeyup="habilitar" required="">
-                                                    <option value="1" >Brigadista</option>
-                                                    <option value="2">Jefe de Brigada</option>
-                                                    <option value="3">Mesa de Apoyo</option>
-                                                    <option value="4">Administrador</option>
+                                                    <option value="Brigadista" >Brigadista</option>
+                                                    <option value="Jefe de Brigada">Jefe de Brigada</option>
+                                                    <option value="Mesa">Mesa de Apoyo</option>
+                                                    <option value="Administrador">Administrador</option>
                                                 </select>
                                             </div>
                                             <div id="ver" >
-                                              <div id="3"   class="form-group">
-                                                <label>N° de brigada</label> <select name="brigada" class="form-control">
-                                                    <option value="1" selected>1</option>
+                                              <div id="Mesa"   class="form-group">
+                                                <label>N° de brigada</label> <select name="nbrigada" class="form-control">
+                                                    <option value="0" selected></option>
+                                                    <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
@@ -175,61 +177,38 @@
                                             <th>Nombre(s)</th>
                                             <th>Apellido(s)</th>
                                             <th>Telefono</th>
+                                            <th>Email</th>
                                             <th>Tipo de Empleado</th>
-                                            
+                                            <th>N. Brigada</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="gradeB">
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 4.0
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td class="center">4</td>
-                                            
+
+                                        <tr>
+                                            <td>Naun</td>
+                                            <td>Lara Gutierrez</td>
+                                            <td>6622112211</td>
+                                            <td>naun@gmail.com</td>
+                                            <td>Jefe de Brigada</td>
+                                            <td>1</td>
                                         </tr>
-                                        <tr class="gradeB">
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 5.0
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5</td>
-                                           
+                                        <tr>
+                                            <td>Naun</td>
+                                            <td>Lara Gutierrez</td>
+                                            <td>6622112211</td>
+                                            <td>naun@gmail.com</td>
+                                            <td>Jefe de Brigada</td>
+                                            <td>1</td>
                                         </tr>
-                                        <tr class="gradeB">
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 5.5
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5.5</td>
+                                        <tr>
+                                            <td>Naun</td>
+                                            <td>Lara Gutierrez</td>
+                                            <td>6622112211</td>
+                                            <td>naun@gmail.com</td>
+                                            <td>Jefe de Brigada</td>
+                                            <td>1</td>
+                                        </tr>
                                         
-                                        </tr>
-                                        <tr class="gradeB">
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 6
-                                            </td>
-                                            <td>Win 98+</td>
-                                            <td class="center">6</td>
-                                           
-                                        </tr>
-                                        <tr class="gradeB">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 7</td>
-                                            <td>Win XP SP2+</td>
-                                            <td class="center">7</td>
-                                           
-                                        </tr>
-                                        <tr class="gradeB">
-                                            <td>Trident</td>
-                                            <td>AOL browser (AOL desktop)</td>
-                                            <td>Win XP</td>
-                                            <td class="center">6</td>
-                                            
-                                        </tr>
 
                                     </tbody>
                                     <tfoot>
@@ -237,7 +216,9 @@
                                             <th>Nombre(s)</th>
                                             <th>Apellido(s)</th>
                                             <th>Telefono</th>
+                                            <th>Email</th>
                                             <th>Tipo de Empleado</th>
+                                            <th>N. Brigada</th>
                                            
                                         </tr>
                                     </tfoot>
