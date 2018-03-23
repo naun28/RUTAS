@@ -120,21 +120,21 @@
                                             <div id="ver" >
                                               <div id="Mesa"   class="form-group">
                                                 <label>N° de brigada</label> <select name="nbrigada" class="form-control">
-                                                    <option value="0" selected></option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
+                                                    <option value="0" selected>Seleccione Brigada</option>
+                                                    <option value="1">Brigada 1</option>
+                                                    <option value="2">Brigada 2</option>
+                                                    <option value="3">Brigada 3</option>
+                                                    <option value="4">Brigada 4</option>
+                                                    <option value="5">Brigada 5</option>
+                                                    <option value="6">Brigada 6</option>
+                                                    <option value="7">Brigada 7</option>
+                                                    <option value="8">Brigada 8</option>
+                                                    <option value="9">Brigada 9</option>
+                                                    <option value="10">Brigada 10</option>
+                                                    <option value="11">Brigada 11</option>
+                                                    <option value="12">Brigada 12</option>
+                                                    <option value="13">Brigada13</option>
+                                                    <option value="14">Brigada 14</option>
                                                 </select>
                                                 </div>
                                             </div>
